@@ -1,0 +1,26 @@
+﻿@model Gumbaz.Entity.Coment;
+
+
+
+
+<body translate="no">
+    <form asp-controller="Work" asp-action="Save" method="post" enctype="multipart/form-data" class="col-md-6" style="margin: 5px auto;">
+        <div class="login-box">
+            <div class="textbox">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input asp-for="Name" type="text" id="form1-username" placeholder="Name">
+            </div>
+            <div class="textbox">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input asp-for="Email" type="number" id="form3-username" placeholder="Email">
+            </div>
+            <div class="textbox">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input asp-for="Comment" type="number" id="form3-username" placeholder="Coment">
+            </div>
+            <button asp-controller="Work" asp-action="Index" type="submit" class="btn btn-pill btn-outline-info" style="width: 100%;">
+                <i class="fa fa-sign-in mr-1"></i> save
+            </button>
+        </div>
+    </form>
+</body>

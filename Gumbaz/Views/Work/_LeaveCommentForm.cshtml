@@ -1,0 +1,29 @@
+﻿<style>
+
+.int{
+
+
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+}
+</style>
+
+
+
+
+
+@model Coment;
+
+<form method="post">
+    <input type="text " class=" int" asp-for="Name" placeholder=" Enter Name">
+    <input type="text" class=" int" asp-for="Email" placeholder=" Enter Email">
+    <textarea rows="5" class=" int" asp-for="Comment" placeholder=" Your Commnet"> </textarea>
+    <button asp-controller="Work" asp-action="Save" type="submit" class="hero-bro red-btn">
+        Post Comment
+    </button>
+</form>

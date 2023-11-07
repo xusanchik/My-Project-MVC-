@@ -1,0 +1,24 @@
+﻿<style>
+.indi{
+
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1 px solid #ccc;
+}
+</style>
+
+
+
+@model Contact;
+
+<form method="post">
+    <input type="text" class="indi" asp-for="Name" placeholder=" Enter Name">
+    <input type="text" class="indi" asp-for="Email" placeholder=" Enter Email">
+    <textarea rows="5" class="indi" asp-for="Subject" placeholder=" Your Subject"> </textarea>
+    <textarea rows="5" class="indi" asp-for="Massage" placeholder="Massage"> </textarea>
+    <button asp-controller="Contact" asp-action="Save" type="submit" class="hero-bro red-btn">
+        Send Massage
+    </button>
+</form>

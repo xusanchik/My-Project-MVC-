@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="Views\Work\Index.cshtml" />
+    <None Include="wwwroot\css\dombrabod.jpg" />
+    <None Include="wwwroot\css\IKKI.jpg" />
+    <None Include="wwwroot\css\mis.jpg" />
+    <None Include="wwwroot\css\ohr.jpg" />
+    <None Include="wwwroot\css\oq.jpg" />
+    <None Include="wwwroot\css\photo_2023-11-04_13-39-56.jpg" />
+    <None Include="wwwroot\css\qod.jpg" />
+    <None Include="wwwroot\css\qqqqqqq.png" />
+    <None Include="wwwroot\css\ray.jpg" />
+    <None Include="wwwroot\css\Screenshot 2023-11-05 201704.png" />
+    <None Include="wwwroot\css\SUV.jpg" />
+    <None Include="wwwroot\css\uf.jpg" />
+    <None Include="wwwroot\css\uzbegim.jpg" />
+    <None Include="wwwroot\css\zor.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.13" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.13">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.13">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.11" />
+  </ItemGroup>
+
+</Project>

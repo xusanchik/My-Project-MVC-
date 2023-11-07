@@ -1,0 +1,463 @@
+﻿
+<style>
+
+
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://e1.pxfuel.com/desktop-wallpaper/630/2/desktop-wallpaper-madina-sharif-madina-sharif-roza-mubarak-gumbad-e-khizra-madina.jpg);
+        background-position: center;
+    background-size: cover;
+    position: relative ;
+
+}
+
+.a52{
+        text-align: right;
+        display: inline-grid;
+
+        width: 15%;
+        height: 2px;
+        margin: auto;
+        transition: 4s;
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+
+}
+       
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+ nav img{
+    width:  150px;
+
+ }
+ .nav-link{
+    flex: 1 ;
+    text-align: right;
+ }
+ .nav-link ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px  12px;
+    position: relative;
+ }
+ .nav-link ul li a{
+    color: yellow;
+    text-decoration: none;
+    font-size: 13px;
+ }
+ .nav-link ul li::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: #f44336;
+        display: block;
+        margin: auto;
+        transition: 1s;
+ }
+ .nav-link ul li:hover::after{
+    width: 100%;
+ }
+ .text-box{
+    width: 90;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+ }
+ .text-box h1{
+    font-size: 52px;
+ }
+ .text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: #fff;
+ }
+ .hero-bro {
+    display: inline-block;
+    text-decoration:  none;
+    color: #fff;
+    border: 1px solid  #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+ }
+ .hero-bro:hover{
+
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: ls;
+ }
+
+ /* couser */
+ .about{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+ }
+ h1{
+    font-size: 36px;
+    font-weight: 600;
+ }
+ p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+ }
+ .row{
+    margin-top: 5% ;
+    display: flex;
+    justify-content: space-between;
+
+ }
+ .about-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+ }
+ h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+ }
+ .about-col:hover{
+    box-shadow: 0 0 20px 0px rgb(0,0,0,0.2);
+ }
+ /* compus */
+
+ .Campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+ }
+ .campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+
+ }
+ .campus-col img{
+    width: 100%;
+    display: block;
+ }
+ .layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+ }
+ .layer:hover{
+    background: rgba(226,0,0,0.7);
+ }
+ .layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+
+ }
+ .layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+ }
+ /* factilies */
+ .Factalis{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+ }
+ .factalis-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+ }
+.factalis-col img{
+    width: 280px;
+    border-radius: 10px;
+}
+.factalis-col p{
+    padding: 0;
+}
+.factalis-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+/* .test */
+
+
+.test{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.test-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+
+}
+.test-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.test-col p{
+
+    padding: 0;
+}
+.test-col h3{
+    margin-top: 15px;
+    text-align: right;
+}
+/* cal to */
+
+.cta{
+   margin: 100px auto;
+   width: 80%;
+        background-image: linear-gradient(rgba(0,0,0.7),rgba(0,0,0,0.7)),url(https://pics.craiyon.com/2023-05-30/8b880101440c4781a97470f0ae5f5e3c.webp);
+   background-position:center;
+   background-size: cover;
+   border-radius: 10px;
+   text-align: center;
+   padding: 100px 0;
+}
+.cta h1{
+   color: #fff;
+   margin-bottom: 40px;
+   padding: 0;
+}
+/* foterr */
+.footer{
+   width: 100%;
+   text-align: center;
+   padding: 30px;
+}
+.footer h4{
+   margin-bottom: 25px;
+   margin-top: 20px;
+   font-weight: 600;
+
+}
+</style>
+
+ <html>
+<body>
+    <section class="header">
+        <nav>
+            <a href="gumbaz.html"><img src="~/css/qqqqqqq.png" width="200" alt=""></a>
+            <div class=" nav-link">
+                <div class="a52">
+
+                    <form asp-controller="Gumbaz" asp-action="Index" method="post">
+                            
+                         <button asp-controller="Gumbaz" asp-action="Index" type="submit" class="btn btn-pill btn-outline-info" style="width: 100%;">
+                         <i class="fa fa-sign-in mr-1"></i> Home    
+                         </button>
+                        <button asp-controller="About" asp-action="Index" type="submit" class="btn btn-pill btn-outline-info" style="width: 100%;">
+                            <i class="fa fa-sign-in mr-1"></i> About
+                        </button>
+                        <button asp-controller="Work" asp-action="Index" type="submit" class="btn btn-pill btn-outline-info" style="width: 100%;">
+                            <i class="fa fa-sign-in mr-1"></i> Work
+                        </button>
+                        <button asp-controller="Contact" asp-action="Index" type="submit" class="btn btn-pill btn-outline-info" style="width: 100%;">
+                            <i class="fa fa-sign-in mr-1"></i> Contact
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class=" text-box">
+            <h1> Production construction  repair design </h1>
+            <p>Creative new projects and innovation</p>
+            <a href=" " class=" hero-bro ">Visit Us to know More</a>
+
+        </div>
+
+    </section>
+
+    <!-- about -->
+
+    <section class="about">
+        <h1> Works time</h1>
+        <p> ajoyib ishlar ketmoqda</p>
+        <div class="row">
+            <div class="about-col">
+                <h3> Intermediate</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores in quibusdam laudantium.
+                    Repellat libero qui illum eos, possimus
+                    ut atque dolore culpa provident cupiditate
+                    expedita ea,
+                    soluta delectus tempore dolor!
+                </p>
+            </div>
+            <div class="about-col">
+                <h3> Pri Intermediate</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores in quibusdam laudantium.
+                    Repellat libero qui illum eos, possimus
+                    ut atque dolore culpa provident cupiditate
+                    expedita ea,
+                    soluta delectus tempore dolor!
+                </p>
+            </div>
+            <div class="about-col">
+                <h3> Upper Intermediate</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores in quibusdam laudantium.
+                    Repellat libero qui illum eos, possimus
+                    ut atque dolore culpa provident cupiditate
+                    expedita ea,
+                    soluta delectus tempore dolor!
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="Campus">
+        <h1>
+            Our global Capus
+        </h1>
+        <p> Ajoyib ishlar ketmoqda</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="~/css/IKKI.jpg">
+                <div class="layer">
+                    <h3> Uzbegim</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="~/css/oq.jpg">
+                <div class="layer">
+                    <h3> White Masjid</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="~/css/SUV.jpg">
+                <div class="layer">
+                    <h3> Bich near</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- facilities -->
+    <section class=" Factalis">
+        <h1>Our Facilities</h1>
+        <p>A joyib ishlar ketmoqda</p>
+        <div class="row">
+            <div class="factalis-col">
+                <img src="~/css/uzbegim.jpg" alt="">
+                <h3>Work Flow</h3>
+                <p>It looks easy but it is very difficult and responsible</p>
+            </div>
+            <div class="factalis-col">
+                <img src="~/css/zor.jpg" alt="">
+                <h3>Work Flow</h3>
+                <p>It looks easy but it is very difficult and responsible</p>
+            </div>
+            <div class="factalis-col">
+                <img src="~/css/mis.jpg" alt="">
+                <h3>Work Flow</h3>
+                <p>It looks easy but it is very difficult and responsible</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEST -->
+    <section class=" test">
+        <h1>Our Facilities</h1>
+        <p>Photos From Work</p>
+        <div class="row">
+            <div class="test-col">
+                <img src="~/css//ray.jpg" alt="">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Aliquid repellat fugiat molestias, dicta
+                    commodi vel illo, iure a nisi error quasi nesciunt quas magnam \
+                    sequi ex eos doloremque ipsa harum.
+                </p>
+                <h3>Dombrabod</h3>
+
+            </div>
+            <div class="test-col">
+                <img src="~/css/dombrabod.jpg" alt="">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Aliquid repellat fugiat molestias, dicta
+                    commodi vel illo, iure a nisi error quasi nesciunt quas magnam \
+                    sequi ex eos doloremque ipsa harum.
+                </p>
+                <h3>Dombrabod</h3>
+
+            </div>
+        </div>
+    </section>
+    <!-- cal too -->
+    <section class=" cta">
+        <h1>Enrol for Our Varius online Courses <br> Anywhere From The World </h1>
+        <a href="" class="hero-bro"> CONTACT US</a>
+    </section>
+    <!-- FOTER -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Eveniet, debitis eligendi? Distinctio consectetur deleniti <br> nam dolorem dignissimos.
+            A blanditiis, laudantium cum omnis\
+            odio vel beatae ipsam, natus ut impedit ex.
+        </p>
+        <div class=" icons">
+            <i class=" fa fa-facebook"></i>
+            <i class=" fa fa-twitter"></i>
+            <i class=" fa fa-instagram"></i>
+            <i class=" fa fa-linkedin"></i>
+
+        </div>
+    </section>
+</body>
+</html>

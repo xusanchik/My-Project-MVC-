@@ -1,0 +1,30 @@
+﻿@model Gumbaz.Entity.Contact;
+
+
+
+
+<body translate="no">
+    <form asp-controller="Contact" asp-action="Save" method="post" enctype="multipart/form-data" class="col-md-6" style="margin: 5px auto;">
+        <div class="login-box">
+            <div class="textbox">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input asp-for="Name" type="text" id="form1-username" placeholder="Name">
+            </div>
+            <div class="textbox">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input asp-for="Email" type="text" id="form3-username" placeholder="Email">
+            </div>
+            <div class="textbox">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input asp-for="Subject" type="text" id="form3-username" placeholder="Subject">
+            </div>
+            <div class="textbox">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input asp-for="Massage" type="text" id="form3-username" placeholder="Message">
+            </div>
+            <button asp-controller="Work" asp-action="Index" type="submit" class="btn btn-pill btn-outline-info" style="width: 100%;">
+                <i class="fa fa-sign-in mr-1"></i> save
+            </button>
+        </div>
+    </form>
+</body>
